@@ -1,0 +1,12 @@
+.logoutbtn{
+    margin: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+#signInDiv{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
