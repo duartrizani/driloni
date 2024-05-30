@@ -1,30 +1,36 @@
-import React, { useContext } from "react";
-import { useState, useEffect, setTimeout } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { ShoppingCart } from "phosphor-react";
-import { Login } from "./login";
-import jwt_decode from "jwt-decode"
-import "./navbar.css"
-import "./../components/login.css"
 
-export const Navbar = () => {
-    
-   
-
+const Navbar = () => {
     return (
-        <div className="navbar">
-            <div className="links">
-                <Link to="/shop"> Shop </Link>
-                <Link to="/cart">
-                    <ShoppingCart size={32} />
+        <nav className="flex items-center justify-between p-4 bg-gray-800 text-white">
+            <div className="flex items-center space-x-4">
+                <Link to="/" className="flex items-center">
+                    <span className="mr-1">
+                        {/* Icon for OfferForm */}
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-6 w-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </span>
+                    OfferForm
                 </Link>
-                <Link to="/table">Table</Link>
+                <Link to="/shop" className="flex items-center">
+                    <span className="mr-1">
+                        {/* Icon for Shop */}
+                        <ShoppingCart size={24} />
+                    </span>
+                    Shop
+                </Link>
             </div>
-
-                <div className="logoutbtn">
-                <Link className="btn btn-primary" to={"/"} onClick={() => window.location.replace('/')}>Sign Out</Link>
-            </div>
-
-        </div>
+        </nav>
     );
 };
+
+export default Navbar;

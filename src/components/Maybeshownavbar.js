@@ -11,7 +11,7 @@ export const MaybeShowNavBar = ({ children }) => {
     const [showNavBar, setShowNavBar] = useState(false)
 
     useEffect(() => {
-        if (location.pathname === '/') {
+        if (location.pathname === '') {
             setShowNavBar(false)
         } else {
             setShowNavBar(true)

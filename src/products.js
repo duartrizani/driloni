@@ -16,180 +16,157 @@ import product14 from "./assets/kabllo per termostrat.jpg";
 import product15 from "./assets/Shiriti metalik.jpg";
 import product16 from "./assets/Gozhda betoni.png";
 
-export const rreshtat = [
-    {
-        name: 'Produkti',
-        selector: row => <img width={150} height={150} object-fit={0} src={row.productImage}/>,
-    },
-    {
-    name: 'Emri',
-    selector: row => row.productName
-    },
-    {
-        name: 'Njesia',
-        selector: row => row.njesia
-    },
-    {
-        name: 'çmimi',
-        selector: row => row.price
-    },
-
-]
-
 export const PRODUCTS = [
     {
         id: 1,
         productName: 'Kaldaja Elektrike Modulare Q=15 kW',
-        price: 999.0,
         njesia: 'Copë:',
         productImage: product1,
-        
+        kategoria: 'Elektronike'
     },
 
     {
         id: 2,
         productName: 'Kaldaja Elektrike Modulare Q=12 kW',
-        price: 999.0,
         njesia: 'Copë:',
         productImage: product1,
-        
+        kategoria: 'Elektronike'
     },
 
     {
         id: 3,
         productName: 'Kaldaja Elektrike Modulare Q=9.0 kW',
-        price: 999.0,
         njesia: 'Copë:',
         productImage: product1,
-        
+        kategoria: 'Elektronike'
     },
 
     {
         id: 4,
         productName: 'Ormani metalik 650x450x110mm',
-        price: 1999.0,
         njesia: 'Copë:',
-        productImage: product2
+        productImage: product2,
+        kategoria: 'Përgjithëshme'
     },
 
     {
         id: 5,
         productName: 'Valvol sferike me holander DN 25 - 1"',
-        price: 799.0,
         njesia: 'Copë:',
-        productImage: product3
+        productImage: product3,
+        kategoria: ['Nxemje', 'Ujë']
     },
 
     {
         id: 6,
         productName: 'Gj. Lidhese 26 - 1"',
-        price: 799.0,
         njesia: 'Copë:',
-        productImage: product4
+        productImage: product4,
+        kategoria: 'Ujë'
     },
 
     {
         id: 7,
         productName: 'Termostrat (kabllo 2x0.75 mm2)',
-        price: 799.0,
         njesia: 'Copë:',
-        productImage: product5
+        productImage: product5,
+        kategoria: ['Elektronike', 'Ujë', 'Nxemje']
     },
 
     {
         id: 8,
         productName: 'Kolektoret 1" ITAP',
-        price: 799.0,
         njesia: 'Vrim:',
-        productImage: product6
+        productImage: product6,
+        kategoria: ['Nxemje', 'Ujë']
     },
 
     {
         id: 9,
         productName: 'Seti per mbushje/zbrazje dhe ajrosje',
-        price: 799.0,
         njesia: 'Setë:',
-        productImage: product7
+        productImage: product7,
+        kategoria: 'Nxemje'
     },
 
     {
         id: 10,
         productName: 'Holander 1" I zinktuar',
-        price: 799.0,
         njesia: 'Copë:',
-        productImage: product8
+        productImage: product8,
+        kategoria: 'Ujë'
     },
 
     {
         id: 11,
         productName: 'Kthes Niple e zinkuar 1"',
-        price: 799.0,
         njesia: 'Copë:',
-        productImage: product9
+        productImage: product9,
+        kategoria: 'Ujë'
     },
 
     {
         id: 12,
         productName: 'Gypi 5 shtresor (t=95°C dhe p=10 bar pe-rt 16x2 mm)',
-        price: 799.0,
         njesia: 'm:',
-        productImage: product10
+        productImage: product10,
+        kategoria: 'Nxemje'
     },
 
     {
         id: 13,
         productName: 'Gypi 5 shtresor (t=95°C dhe p=10 bar pe-rt 26x3 mm)',
-        price: 799.0,
         njesia: 'm:',
-        productImage: product10
+        productImage: product10,
+        kategoria: 'Nxemje'
     },
 
     {
         id: 14,
         productName: 'Alufolia termike',
-        price: 799.0,
         njesia: 'm²:',
-        productImage: product11
+        productImage: product11,
+        kategoria: 'Nxemje'
     },
 
     {
         id: 15,
         productName: 'Shina per perforcimin e gypave',
-        price: 799.0,
         njesia: 'm:',
-        productImage: product12
+        productImage: product12,
+        kategoria: 'Nxemje'
     },
 
     {
         id: 16,
         productName: 'Mberthyese per fiksimin e gypave',
-        price: 799.0,
         njesia: 'Copë:',
-        productImage: product13
+        productImage: product13,
+        kategoria: 'Nxemje'
     },
 
     {
         id: 17,
         productName: 'Kabllo per termostrat (3x1.5mm)',
-        price: 799.0,
         njesia: 'm:',
-        productImage: product14
+        productImage: product14,
+        kategoria: 'Elektronike'
     },
 
     {
         id: 18,
         productName: 'Shiriti metalik',
-        price: 799.0,
         njesia: 'Copë:',
-        productImage: product15
+        productImage: product15,
+        kategoria: 'Përgjithëshme'
     },
 
     {
         id: 19,
         productName: 'Gozhda betoni M6',
-        price: 799.0,
         njesia: 'Copë:',
-        productImage: product16
+        productImage: product16,
+        kategoria: 'Përgjithëshme'
     },
 
 ]

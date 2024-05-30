@@ -8,18 +8,23 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.0",
+    "excel4node": "^1.8.2",
+    "file-saver": "^2.0.5",
+    "fontkit": "^2.0.2",
     "gapi-script": "^1.2.0",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.5.29",
     "jwt-decode": "^3.1.2",
+    "pdf-lib": "^1.17.1",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
-    "react-data-table-component": "^7.5.3",
+    "react-data-table-component": "^7.6.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
   }
 }

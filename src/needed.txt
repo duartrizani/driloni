@@ -1,0 +1,18 @@
+//   SEARCH BY LETTER NOT JUST THE NAME
+
+//   const filteredProducts = PRODUCTS.filter((product) => {
+//     const productName = product.productName.toLowerCase();
+//     const searchTermLowerCase = searchTerm.toLowerCase();
+
+//     // Check if each character of the search term appears in the product name in order
+//     let currentIndex = 0;
+//     for (let i = 0; i < productName.length; i++) {
+//       if (productName[i] === searchTermLowerCase[currentIndex]) {
+//         currentIndex++;
+//       }
+//       if (currentIndex === searchTermLowerCase.length) {
+//         return true; // Found all characters in order
+//       }
+//     }
+//     return false;
+//   });
