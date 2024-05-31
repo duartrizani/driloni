@@ -92,7 +92,7 @@ const ProductsSummary = ({ offerDetails, selectedProducts }) => {
           doc.addImage(imgData, 'JPEG', margin, y, adjustedImageWidth, adjustedImageHeight);
     
           // Add product details text with styling and alignment
-          doc.text(product.productName.slice(0, 20), margin + imageWidth + 5, y + 2); // Limit name length and adjust y position
+          doc.text(product.productName, margin + imageWidth + 5, y + 2); // Limit name length and adjust y position
           doc.text(product.njesia.toString(), margin + columnWidth1 + columnWidth2, y + 2);
           doc.text(Number(product.amount).toString(), margin + columnWidth1 + columnWidth2 * 2, y + 2); // Parse as number
     
