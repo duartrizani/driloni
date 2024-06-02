@@ -39,7 +39,7 @@ export const Product = (props) => {
         className={`addToCartBttn max-lg:text-sm mt-4 p-2 text-white rounded-md hover:bg-blue-700 ${isAdded ? "bg-green-500 hover:bg-green-600" : "bg-blue-500"}`}
         onClick={handleAddToCart}
       >
-        {isAdded ? "Added" : "Add To Cart"}
+        {isAdded ? "U shtua" : "Shto"}
       </button>
       
     </div>

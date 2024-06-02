@@ -25,19 +25,19 @@ const OfferForm = ({ setOfferDetails }) => {
   return (
     <form onSubmit={handleSubmit} className="max-w-md mx-auto mt-8 p-8 border rounded-lg shadow-lg">
       <div className="mb-4">
-        <label className="block text-sm font-bold mb-2">Offer made by:</label>
+        <label className="block text-sm font-bold mb-2">Oferta nga:</label>
         <input type="text" name="offerMadeBy" value={formData.offerMadeBy} onChange={handleChange} className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
       </div>
       <div className="mb-4">
-        <label className="block text-sm font-bold mb-2">Offer for:</label>
+        <label className="block text-sm font-bold mb-2">Oferta për:</label>
         <input type="text" name="offerFor" value={formData.offerFor} onChange={handleChange} className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
       </div>
       <div className="mb-4">
-        <label className="block text-sm font-bold mb-2">Address:</label>
+        <label className="block text-sm font-bold mb-2">Adresa:</label>
         <input type="text" name="address" value={formData.address} onChange={handleChange} className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
       </div>
       <div className="mb-4">
-        <label className="block text-sm font-bold mb-2">Email:</label>
+        <label className="block text-sm font-bold mb-2">Email-i:</label>
         <input type="email" name="email" value={formData.email} onChange={handleChange} className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" />
       </div>
       <div className="flex justify-between">

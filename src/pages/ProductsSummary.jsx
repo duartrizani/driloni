@@ -9,10 +9,10 @@ const ProductsSummary = ({ offerDetails, selectedProducts }) => {
     const generateExcel = () => {
         const wb = XLSX.utils.book_new();
         const wsData = [
-          ["Offer Made By", offerDetails.offerMadeBy],
-          ["Offer For", offerDetails.offerFor],
-          ["Address", offerDetails.address],
-          ["Email", offerDetails.email],
+          ["Oferta nga:", offerDetails.offerMadeBy],
+          ["Oferta për:", offerDetails.offerFor],
+          ["Adresa:", offerDetails.address],
+          ["Email-i:", offerDetails.email],
           [],
           ["Emri Produktit", "Njesia", "Sasia"]
         ];
@@ -62,7 +62,7 @@ const ProductsSummary = ({ offerDetails, selectedProducts }) => {
         doc.setFontSize(fontSize);
     
         // Add offer details with styling
-        doc.text(`Offer Made By: ${offerDetails.offerMadeBy}`, margin, margin);
+        doc.text(`Oferta nga: ${offerDetails.offerMadeBy}`, margin, margin);
         // ... add other offer details text with styling
     
         // Add a line break
@@ -127,12 +127,12 @@ const ProductsSummary = ({ offerDetails, selectedProducts }) => {
     
   return (
     <div className="p-8">
-      <h2 className="text-3xl font-bold mb-6">Offer Summary</h2>
+      <h2 className="text-3xl font-bold mb-6">Oferta</h2>
       <div className="mb-8">
-        <p className="mb-2"><span className="font-semibold">Offer Made By:</span> {offerDetails.offerMadeBy}</p>
-        <p className="mb-2"><span className="font-semibold">Offer For:</span> {offerDetails.offerFor}</p>
-        <p className="mb-2"><span className="font-semibold">Address:</span> {offerDetails.address}</p>
-        <p className="mb-2"><span className="font-semibold">Email:</span> {offerDetails.email}</p>
+        <p className="mb-2"><span className="font-semibold">Oferta nga:</span> {offerDetails.offerMadeBy}</p>
+        <p className="mb-2"><span className="font-semibold">Oferta për:</span> {offerDetails.offerFor}</p>
+        <p className="mb-2"><span className="font-semibold">Adresa:</span> {offerDetails.address}</p>
+        <p className="mb-2"><span className="font-semibold">Email-i:</span> {offerDetails.email}</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
         {selectedProducts.map((product, index) => (
@@ -150,7 +150,7 @@ const ProductsSummary = ({ offerDetails, selectedProducts }) => {
           onClick={generateExcel}
           className="px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-700"
         >
-          Generate Excel
+          Download Excel
         </button>
         <button onClick={generatePDF} className="px-6 py-3 bg-red-500 text-white rounded-md hover:bg-red-700">
           Download PDF

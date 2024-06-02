@@ -74,7 +74,7 @@ const Shop = ({ setSelectedProducts }) => {
                         <div className="flex items-center justify-between">
                             <input
                                 type="text"
-                                placeholder="Search products..."
+                                placeholder="Kërko Produktinë..."
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                                 className="px-3 py-2 border rounded-md w-full md:w-64 mr-4"
@@ -84,16 +84,16 @@ const Shop = ({ setSelectedProducts }) => {
                                 onChange={(e) => setSortBy(e.target.value)}
                                 className="px-3 py-2 border rounded-md"
                             >
-                                <option value="">Sort by Alphabet</option>
-                                <option value="asc">Ascending</option>
-                                <option value="desc">Descending</option>
+                                <option value="">Rendit sipas alfabetit</option>
+                                <option value="asc">A-Z...</option>
+                                <option value="desc">Z-A...</option>
                             </select>
                             <select
                                 value={selectedCategory}
                                 onChange={(e) => setSelectedCategory(e.target.value)}
                                 className="px-3 py-2 border rounded-md ml-4"
                             >
-                                <option value="">All Categories</option>
+                                <option value="">Të gjitha kategoritë</option>
                                 {uniqueCategories.map((category) => (
                                     <option key={category} value={category}>
                                         {category}
@@ -104,7 +104,7 @@ const Shop = ({ setSelectedProducts }) => {
                                 onClick={handleCheckout}
                                 className="px-6 py-3 bg-green-500 text-white rounded-md hover:bg-green-700 ml-auto"
                             >
-                                Proceed to Summary
+                                Vazhdo
                             </button>
                         </div>
                     </div>

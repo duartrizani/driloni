@@ -19,14 +19,14 @@ const Navbar = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </span>
-                    OfferForm
+                    Krijo Ofertë
                 </Link>
                 <Link to="/shop" className="flex items-center">
                     <span className="mr-1">
                         {/* Icon for Shop */}
                         <ShoppingCart size={24} />
                     </span>
-                    Shop
+                    Produktet
                 </Link>
             </div>
         </nav>

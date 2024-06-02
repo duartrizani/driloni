@@ -1,4 +1,3 @@
-import DataTable from 'react-data-table-component';
 import product1 from "./assets/eco_smart_wifi_balline.png";
 import product2 from "./assets/Orman_metalik.png";
 import product3 from "./assets/DN25-1.jpg";
