@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const Product = (props) => {
+const Product = (props) => {
   const { productName, productImage, njesia } = props.data;
   const { addToCart } = props;
   const [amount, setAmount] = useState(1);
@@ -47,3 +47,5 @@ export const Product = (props) => {
     
   );
 };
+
+export default Product;
